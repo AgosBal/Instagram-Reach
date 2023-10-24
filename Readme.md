@@ -18,3 +18,5 @@ For this case I will use this [dataset](Instagram-Reach.csv) and the process wil
 
 # Conclusions
 
+
+<img src="https://github.com/AgosBal/Instagram-Reach/blob/f6f05e95f905273ece8dd5b084917b661345f57b/img/agostina-balverde-high-resolution-logo-transparent.png" width="20" height="10" alt="Agostina Balverde logo">
