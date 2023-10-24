@@ -1,5 +1,4 @@
-# Google Trends Analysis 
-<img src="https://github.com/AgosBal/Instagram-Reach/blob/40768e90852e0ed2c44aeb399a07167fcfb74aa5/img/Google%20Trends.png" width="30" height="10" alt="Google Trends">
+# Google Trends Analysis <img src="https://github.com/AgosBal/Instagram-Reach/blob/40768e90852e0ed2c44aeb399a07167fcfb74aa5/img/Google%20Trends.png" width="30" height="20" alt="Google Trends">
 
 Using the Google Trends API with Python, I intend to analyse and list the Google Search results on queries related to "when is it ideal to post on social networks".
 
