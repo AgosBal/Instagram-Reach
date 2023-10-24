@@ -1,6 +1,6 @@
 # Google Trends Analysis
 Using the Google Trends API with Python, I intend to analyse and list the Google Search results on queries related to "when is it ideal to post on social networks".
-The code is here
+The code is [here](Google.Search.Analysis.ipynb)
 
 
 # Instagram Forecast
