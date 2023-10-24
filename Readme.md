@@ -1,5 +1,6 @@
 # Google Trends Analysis 
-![Google Trends](img/Google Trends.png)
+![Google Trends]([img/Google Trends.png](https://github.com/AgosBal/Instagram-Reach/blob/40768e90852e0ed2c44aeb399a07167fcfb74aa5/img/Google%20Trends.png))
+
 Using the Google Trends API with Python, I intend to analyse and list the Google Search results on queries related to "when is it ideal to post on social networks".
 
 The code is [here](Google.Search.Analysis.ipynb)
