@@ -5,7 +5,7 @@ Using the Google Trends API with Python, I intend to analyse and list the Google
 The code is [here](Google.Search.Analysis.ipynb)
 
 
-# Instagram Forecast <img src="https://github.com/AgosBal/Instagram-Reach/blob/4abb54adfbc157be97f828eeca8b7f0fb6075498/img/Instagram.png" width="30" height="20" alt="Instagram">
+# Instagram Forecast <img src="https://github.com/AgosBal/Instagram-Reach/blob/4abb54adfbc157be97f828eeca8b7f0fb6075498/img/Instagram.png" width="20" height="20" alt="Instagram">
 While social media is part of our daily lives, we have a life outside of it and are not always connected.
 
 I did a little analysis on the search for "when is the ideal time to post": [here](Google.Search.Analysis.ipynb). Were I discovered that people are still looking for information related to this topic.
