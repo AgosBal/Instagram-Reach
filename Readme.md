@@ -39,7 +39,7 @@ There are some outliers. These are the points that lie outside the interquartile
 Overall, the box plot shows that Instagram reach is a positive measure of the performance of a post or story.
 
 4. The next step was to add a column named 'Day Name' to figure out the behaviour of Instagram's reach depending on the day of the week. 
-<img src="https://github.com/AgosBal/Instagram-Reach/blob/51c616296eef7bcf787eeb9a20f08f9ca4cd5263/img/Instagram%20Reach%20by%20day%20of%20week.png" width='1500' height='500' alt="Instagram reach by day of the week">
+<img src="https://github.com/AgosBal/Instagram-Reach/blob/17a7cf04cb7afa8917f874aa332a1dab142edee8/img/Instagram%20Reach%20by%20day%20of%20week..png" width='1500' height='500' alt="Instagram reach by day of the week">
 
 The day with the highest average reach is Tuesday, (54,000 accounts reached), followed in decreasing order by Sunday, Monday, Wednesday, Thursday, Saturday and Friday. 
 For all days 50% of the reach is below 48,000 - 35,000 accounts reached and the remaining above those values.
@@ -48,9 +48,32 @@ Considering only these values:
 * If looking to maximise the reach of Instagram posts, it is recommended to post on Tuesdays.
 * If looking for a more stable and predictable reach, it is recommended to post on Saturdays.
 
-5. 
+5. The function "seasonal_decompose" from the Statsmodels library was used to perform a seasonal decomposition of the time series. The seasonal decomposition consists of dividing the time series into three components:
 
+* Trend: The long-term trend of the time series.
+* Seasonal: The periodic patterns that repeat over time.
+* Resid: The variability in the time series that cannot be explained by trend or seasonality.
 
+A "multiplicative" model is used since the apparent trend over time is decreasing and not linear or stable (which would suggest using an "additive" model). It can be seen that the trend is decreasing, therefore the multiplicative model was correctly chosen.
 
+<img src="https://github.com/AgosBal/Instagram-Reach/blob/17a7cf04cb7afa8917f874aa332a1dab142edee8/img/Instagram%20reach%20Time%20Series%20Forecasting.png" width="1500" height="500" alt="Seasonal decompose">
+
+Based on the graph, it can be inferred that the Instagram reach of the account has a clear seasonality. Reach decreases in the months of May, August, November and March. These months should be taken into account to analyse the possible external causes of the declines in the trend.
+
+The residual appears to be relatively small, indicating that the seasonal decomposition has been effective. The behaviour of the residual in the central months of the period analysed (April 2022 - April 2023) is striking. This may be due to the fact that the seasonality of the scope of the account is stronger during these months. In addition, the residual seems to have a negative peak in August 2022, which may be due to a specific event that occurred in that month. To identify the causes of the patterns observed in the residual, a correlation analysis between the residual of a seasonal decomposition and the variable Date was used, and it was found that there is no relationship between them, so the patterns may be due to other variables such as marketing strategy, Instagram popularity or external events.
+
+6. To understand a little more about seasonal behaviour and predict how the reach will behave, the SARIMA (Seasonal Autoregressive Integrated Moving Average) model was used, to predict stationary time series with seasonality.
+It works by splitting the time series into two components:
+* Non-seasonal component: represents the long-term trend of the time series.
+* Seasonal component: represents seasonal patterns of the time series. 
+It has 5 parameters, of which it uses p, d and q to model the first one and the parameters P, D and Q for the second one. 
+
+An automatic fitting of the model was performed to find the best fit to the data and to avoid over-fitting. The selection of the model parameters was done as follows: the first using the autocorrelation plot, the second with a partial autocorrelation plot, while the third is = 1. 
+
+This was the result for p:
+<img src="https://github.com/AgosBal/Instagram-Reach/blob/17a7cf04cb7afa8917f874aa332a1dab142edee8/img/Autocorrelation%20plot%20for%20q.png" width="1000" height="500" alt="Autocorrelation for p">
+
+This for q:
+<img src="https://github.com/AgosBal/Instagram-Reach/blob/17a7cf04cb7afa8917f874aa332a1dab142edee8/img/Partial%20Autocorrelation.png" width="1000" height="500" alt="Partial autocorrelation for q">
 
 <img src="https://github.com/AgosBal/Instagram-Reach/blob/f6f05e95f905273ece8dd5b084917b661345f57b/img/agostina-balverde-high-resolution-logo-transparent.png" width="350" height="110" alt="Agostina Balverde logo">
