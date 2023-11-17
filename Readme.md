@@ -41,6 +41,15 @@ Overall, the box plot shows that Instagram reach is a positive measure of the pe
 4. The next step was to add a column named 'Day Name' to figure out the behaviour of Instagram's reach depending on the day of the week. 
 <img src="https://github.com/AgosBal/Instagram-Reach/blob/51c616296eef7bcf787eeb9a20f08f9ca4cd5263/img/Instagram%20Reach%20by%20day%20of%20week.png" width='1500' height='500' alt="Instagram reach by day of the week">
 
+The day with the highest average reach is Tuesday, (54,000 accounts reached), followed in decreasing order by Sunday, Monday, Wednesday, Thursday, Saturday and Friday. 
+For all days 50% of the reach is below 48,000 - 35,000 accounts reached and the remaining above those values.
+The day with the highest concentration of values around the average is Saturday. The day with the highest dispersion of values around the average is Tuesday.
+Considering only these values: 
+* If looking to maximise the reach of Instagram posts, it is recommended to post on Tuesdays.
+* If looking for a more stable and predictable reach, it is recommended to post on Saturdays.
+
+5. 
+
 
 
 
